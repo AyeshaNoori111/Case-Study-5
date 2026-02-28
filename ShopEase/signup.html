@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Signup - ShopEase</title>
+    <link rel="stylesheet" href="css/signup.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>ShopEase</h2>
+    </div>
+    <nav>
+        <a href="index.html" id="home">Home</a>
+        <a href="products.html" id="products">Products</a>
+        <a href="cart.html" id="cart">Cart</a>
+        <a href="wishlist.html" id="wishlist">Wishlist</a>
+        <a href="about.html" id="about">About</a>
+        <a href="contact.html" id="contact">Contact</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="signup.html" id="signupLink">Signup</a>
+        <a href="#" onclick="logout()" id="logoutLink" style="display:none;">Logout</a>
+    </nav>
+</header>
+
+<div class="section">
+    <h2>Signup</h2>
+
+    <form onsubmit="return signupUser()">
+        <input type="text" id="name" placeholder="Full Name"><br>
+        <input type="email" id="email" placeholder="Email"><br>
+        <input type="password" id="password" placeholder="Password"><br>
+        <input type="password" id="confirm" placeholder="Confirm Password"><br>
+        <button type="submit">Signup</button>
+    </form>
+</div>
+
+<script>
+function signupUser(){
+    let email = document.getElementById("email").value;
+    let pass = document.getElementById("password").value;
+    let confirm = document.getElementById("confirm").value;
+
+    if(pass !== confirm){
+        alert("Passwords do not match");
+        return false;
+    }
+
+    localStorage.setItem("user", email);
+    alert("Signup successful");
+    window.location = "login.html";
+    return false;
+}
+</script>
+
+<footer>© 2026 ShopEase</footer>
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+header {
+    background-color: #2e8b57;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 8px;
+    text-decoration: none;
+}
+
+.section {
+    text-align: center;
+    padding: 40px;
+}
+
+input {
+    padding: 8px;
+    margin: 5px;
+    width: 250px;
+}

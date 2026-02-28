@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #f5f5f5;
+    background: linear-gradient(to right, #ff416c, #ff4b2b);
+}
+
+header {
+    background-color: #2e8b57;
+    padding: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav a {
+    color: white;
+    margin: 8px;
+    text-decoration: none;
+}
+
+.section {
+    text-align: center;
+    padding: 40px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+.home-image {
+    width: 80%;
+    max-width: 700px;
+    margin-top: 20px;
+    border-radius: 8px;
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Products</title>
+    <link rel="stylesheet" href="css/product.css">
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h2>ShopEase</h2>
+    </div>
+    <nav>
+        <a href="index.html" id="home">Home</a>
+        <a href="products.html" id="products">Products</a>
+        <a href="cart.html" id="cart">Cart</a>
+        <a href="wishlist.html" id="wishlist">Wishlist</a>
+        <a href="about.html" id="about">About</a>
+        <a href="contact.html" id="contact">Contact</a>
+        <a href="login.html" id="loginLink">Login</a>
+        <a href="signup.html" id="signupLink">Signup</a>
+        <a href="#" onclick="logout()" id="logoutLink" style="display:none;">Logout</a>
+    </nav>
+</header>
+
+<div class="section">
+    <h2>Products</h2>
+
+    <div class="box">
+    <img src="images/apple.jpg" alt="Apple" width="150">
+    <h3>Apple</h3>
+    <p>₹100/kg</p>
+    <button onclick="addToCart('Apple')">Add to Cart</button>
+    <button onclick="addToWishlist('Apple')">Wishlist</button>
+</div>
+
+<div class="box">
+    <img src="images/tomato.jpg" alt="Tomato" width="150">
+    <h3>Tomato</h3>
+    <p>₹40/kg</p>
+    <button onclick="addToCart('Tomato')">Add to Cart</button>
+    <button onclick="addToWishlist('Tomato')">Wishlist</button>
+</div>
+
+<footer>© 2026 ShopEase</footer>
+<script src="js/script.js"></script>
+</body>
+</html>
